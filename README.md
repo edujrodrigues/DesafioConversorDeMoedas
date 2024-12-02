@@ -1,13 +1,13 @@
 
 # Conversor de Moedas
 
-Este é um projeto de console em Java que permite converter valores entre diferentes moedas usando cotações atualizadas obtidas de uma API externa. O objetivo é fornecer uma aplicação simples para realizar conversões rápidas entre moedas populares como Dólar (USD), Real Brasileiro (BRL), Peso Argentino (ARS), e Peso Colombiano (COP).
+Este é um projeto em Java que permite converter valores entre diferentes moedas usando cotações em tempo real, obtidas de exchangerate-api.com. O objetivo é fornecer uma aplicação simples para realizar conversões rápidas entre algumas moedas selecionadas como Dólar (USD), Real Brasileiro (BRL), Peso Argentino (ARS), e Peso Colombiano (COP).
 
 ---
 
 ## 📋 Funcionalidades
 
-- Conversão entre moedas suportadas:
+- Conversão entre moedas:
   - Dólar (USD) ↔ Peso Argentino (ARS)
   - Dólar (USD) ↔ Real Brasileiro (BRL)
   - Dólar (USD) ↔ Peso Colombiano (COP)
@@ -25,26 +25,6 @@ Este é um projeto de console em Java que permite converter valores entre difere
   - `Moedas`: Representa as taxas de câmbio recebidas da API.
   - `RespostaAPI`: Representa a estrutura do JSON retornado pela API.
   - `ResultadoConversao`: Armazena os detalhes de uma conversão (valor convertido, moeda origem e destino).
-
----
-
-## 🚀 Como Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/conversor-moedas.git
-   cd conversor-moedas
-   ```
-
-2. Compile o projeto:
-   ```bash
-   javac -d out -cp libs/gson.jar src/**/*.java
-   ```
-
-3. Execute o programa:
-   ```bash
-   java -cp out:libs/gson.jar br.com.alura.desafioconversordemoedas.Principal
-   ```
 
 ---
 
@@ -72,7 +52,7 @@ Este é um projeto de console em Java que permite converter valores entre difere
 
 4. Veja o resultado:
    ```
-   Valor 100.00 [USD] corresponde ao valor final =>>> 27,000.00 [ARS]
+   Valor 100,0 [USD] corresponde ao valor final =>>> 101175,0 [ARS]
    ```
 
 ---
@@ -80,7 +60,7 @@ Este é um projeto de console em Java que permite converter valores entre difere
 ## 📚 Dependências
 
 - [Gson](https://github.com/google/gson): Biblioteca para manipular JSON.
-- Java 11 ou superior.
+- Java 17.
 
 ---
 
@@ -97,13 +77,3 @@ O projeto utiliza a [ExchangeRate-API](https://www.exchangerate-api.com/) para b
    ```
 
 ---
-
-## 🛡️ Licença
-
-Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT) - veja o arquivo LICENSE para mais detalhes.
-
----
-
-## 🌟 Contribuição
-
-Sinta-se à vontade para abrir **issues** ou enviar **pull requests** para contribuir com melhorias neste projeto.
