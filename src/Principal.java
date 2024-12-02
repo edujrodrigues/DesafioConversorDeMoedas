@@ -10,8 +10,8 @@ public class Principal {
         var iOpcaoOK = 0;
         var sMoedaOrigem = "USD";
         var sMoedaDestino = "USD";
-        double dbValor = 0;
-        double dbResultado = 0;
+        double dbValor;
+        double dbResultado;
         Scanner scanLeitura = new Scanner(System.in);
 
         while (true){
